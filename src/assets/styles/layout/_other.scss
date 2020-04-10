@@ -1,0 +1,44 @@
+.btn_clic {
+	a {
+		@include MullerBold_font();
+		font-size: 18px;
+		display: inline-block;
+		padding: 20px 30px 15px 30px;
+		color: #161616;
+		background: #ffc861;
+		border-radius: 5px;
+		text-decoration: none;
+		text-transform: uppercase;
+		border: 1px solid #ffc861;
+		transition: all 200ms ease-in-out;
+		&:hover {
+			border: 1px solid #000;
+			background: #fff;
+			transition: all 200ms ease-in-out;
+		}
+	}
+}
+
+.btn_clic_invers {
+	display: block;
+	padding-bottom: 150px;
+	a {
+		@include MullerBold_font();
+		font-size: 18px;
+		line-height: 18px;
+		display: inline-block;
+		padding: 20px 30px 15px 30px;
+		color: #161616;
+		background: #fff;
+		border-radius: 5px;
+		text-decoration: none;
+		text-transform: uppercase;
+		border: 1px solid #000;
+		transition: all 200ms ease-in-out;
+		&:hover {
+			border: 1px solid #ffc861;
+			background: #ffc861;
+			transition: all 200ms ease-in-out;
+		}
+	}
+}
