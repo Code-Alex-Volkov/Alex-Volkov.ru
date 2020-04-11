@@ -1,0 +1,160 @@
+.header {
+	.centr_box {
+		.project_single {
+			height: 100vh;
+			display: flex;
+			.left_block {
+				background: #fff;
+				width: 46%;
+				box-shadow: 1px 0 15px #B9B9B9;
+				z-index: 80;
+				.project_slider {
+					padding-left: 80px;
+					.slick-list {
+						height: 100vh;
+					}
+					.slid {
+						img {
+							max-width: 100%;
+							height: 100vh;
+						}
+					}
+				}
+			}
+			.right_block {
+				width: 54%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				.project_tab_container {
+					background: #f0f0f0;
+					width: 100%;
+					@include LatoLight_font();
+					height: 60%;
+					.top_box {
+						height: 100%;
+
+						&.tab-item {
+							display: none;
+						}
+
+						&.tab-0 {
+							display: block;
+						}
+
+						h2.title {
+							color: #000;
+							font-size: 48px;
+							padding-left: 80px;
+							text-transform: uppercase;
+							padding-top: 80px;
+							padding-bottom: 120px;
+							span {
+								float: right;
+								padding-right: 80px;
+								a {
+									 font-size: 24px;
+									 position: relative;
+								    line-height: 30px;
+								    vertical-align: middle;
+								    text-transform: uppercase;
+								    transition: 0.7s ease;
+								    color: #c1c1c1;
+								    text-decoration: none;
+								    @include LatoRegular_font();
+								    &:hover {
+								    	color: #0023ff;
+								    }
+								    .fa-address-card, .fa-question-circle, .fa-project-diagram, .fa-user-clock, .fa-wpforms, .fa-blog, .fa-id-card-alt, .fa-dollar-sign {
+								    	font-size: 40px;
+								    	padding-left: 30px;
+								    }
+								}
+							}
+						}
+						h1.title_project {
+							color: #0023ff;
+							font-size: 60px;
+							text-transform: uppercase;
+							padding-left: 80px;
+							padding-bottom: 40px;
+							display: block;
+						}
+						.sub_title {
+							color: #a8a8a8;
+							font-size: 24px;
+							padding-left: 80px;
+							padding-bottom: 50px;
+							display: block;
+						}
+						.price_box {
+							display: flex;
+							padding-left: 80px;
+							padding-right: 80px;
+							justify-content: space-between;
+							align-items: center;
+							.time_block {
+								span {
+									display: block;
+								}
+								.text {
+									color: #000;
+									font-size: 18px;
+								}
+								.time {
+									color: #0023ff;
+									font-size: 32px;
+									@include LatoRegular_font();
+								}
+							}
+							.price_block {
+								span {
+									display: block;
+								}
+								.text {
+									color: #000;
+									font-size: 18px;
+								}
+								.price {
+									color: #0023ff;
+									font-size: 32px;
+									@include LatoRegular_font();
+								}
+							}
+							.btn_clic {
+								a {
+									width: 180px;
+									text-align: center;
+								}
+								
+							}
+						}
+					}
+				}
+				
+				
+				.project_slider_nav {
+					max-width: 90%;
+					margin: 0 auto;
+					background: #fff;
+					height: 40%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					.slid_nav {
+						width: 33.33333%;
+						cursor: pointer;
+						
+						img {
+							width: 90%;
+							height: auto;
+						}
+					}
+					.slick-prev, .slick-next {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

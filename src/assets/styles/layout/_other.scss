@@ -1,19 +1,21 @@
 .btn_clic {
 	a {
-		@include MullerBold_font();
-		font-size: 18px;
+		@include LatoLight_font();
+		font-size: 18px; 
 		display: inline-block;
-		padding: 20px 30px 15px 30px;
-		color: #161616;
-		background: #ffc861;
-		border-radius: 5px;
+		padding: 10px 20px;
+		color: #fff;
+		background: #0023ff;
+		border-radius: 25px;
 		text-decoration: none;
 		text-transform: uppercase;
-		border: 1px solid #ffc861;
+		border: 1px solid #0023ff;
 		transition: all 200ms ease-in-out;
 		&:hover {
-			border: 1px solid #000;
+			border: 1px solid #0023ff;
 			background: #fff;
+			color: #000;
+			@include LatoRegular_font();
 			transition: all 200ms ease-in-out;
 		}
 	}
@@ -23,7 +25,7 @@
 	display: block;
 	padding-bottom: 150px;
 	a {
-		@include MullerBold_font();
+		
 		font-size: 18px;
 		line-height: 18px;
 		display: inline-block;

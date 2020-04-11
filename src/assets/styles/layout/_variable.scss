@@ -1,60 +1,48 @@
 //mixin fonts 
 
-@mixin MullerBold_font(){
-	font-family: 'Muller Bold', sans-serif;
+@mixin LatoThin_font(){
+	font-family: 'LatoThin', sans-serif;
 }
 
-@mixin MullerRegular_font(){
-	font-family: 'Muller Regular', sans-serif;
+@mixin LatoLight_font(){ 
+	font-family: 'LatoLight', sans-serif;
 }
 
-@mixin MullerMedium_font(){
-	font-family: 'Muller Medium', sans-serif;
+@mixin LatoRegular_font(){ 
+	font-family: 'LatoRegular', sans-serif;
 }
 
-@mixin Myriad_font(){
-	font-family: 'Myriad Pro Regular', sans-serif;
+
+@mixin LatoBlack_font(){
+	font-family: 'LatoBlack', sans-serif;
 }
 
 //fonts
 
 @font-face {
-	font-family: 'Muller Bold';
-	src:url('../fonts/MullerBold.woff2') format('woff2'),
-		url('../fonts/MullerBold.woff') format('woff'),
-		url('../fonts/MullerBold.ttf') format('truetype');
-	font-weight: 700;
-	font-style: normal;
+	font-family: 'LatoThin';
+	src:url('../fonts/Lato-Thin.ttf') format('truetype');
+	font-weight: 100;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Muller Regular';
-	src:url('../fonts/MullerRegular.woff2') format('woff2'),
-		url('../fonts/MullerRegular.woff') format('woff'),
-		url('../fonts/MullerRegular.ttf') format('truetype');
+	font-family: 'LatoLight';
+	src:url('../fonts/Lato-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'LatoRegular';
+	src:url('../fonts/Lato-Regular.ttf') format('truetype');
 	font-weight: 400;
-	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Muller Medium';
-	src:url('../fonts/MullerMedium.woff2') format('woff2'),
-		url('../fonts/MullerMedium.woff') format('woff'),
-		url('../fonts/MullerMedium.ttf') format('truetype');
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Myriad Pro Regular';
-	src: url('../fonts/MyriadPro-Regular.eot');
-	src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/MyriadPro-Regular.woff') format('woff'),
-		url('../fonts/MyriadPro-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+	font-family: 'LatoBlack';
+	src:url('../fonts/Lato-Black.ttf') format('truetype');
+	font-weight: 900;
 	font-display: swap;
 }
