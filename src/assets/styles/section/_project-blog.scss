@@ -1,0 +1,77 @@
+.header {
+	.centr_box {
+		.project_blog {
+			@include LatoLight_font();
+			.project_blog_title {
+				display: flex;
+				justify-content: space-between;
+				padding-top: 80px;
+				.title_blog {
+					color: #0023ff;
+					font-size: 48px;
+					text-transform: uppercase;
+				}
+				span {
+					a {
+						font-size: 24px;
+						line-height: 30px;
+						vertical-align: middle;
+						text-transform: uppercase;
+						transition: 0.5s ease;
+						color: #c1c1c1;
+						text-decoration: none;
+						@include LatoRegular_font();
+						&:hover {
+							color: #0023ff;
+						}
+						.fa-project-diagram {
+					    	font-size: 40px;
+					    	padding-left: 30px;
+					    }
+					}
+				}
+			}
+			.block_blog {
+				
+				padding-top: 50px;
+				.title_blog {
+					padding-bottom: 50px;
+					color: #0023ff;
+					font-size: 40px;
+				}
+				.btn_clic {
+					margin-bottom: 50px;
+					a {
+						width: 200px;
+					}
+				}
+				.blog_box {
+					display: flex;
+					justify-content: space-between;
+					margin-bottom: 30px;
+					.left_blog {
+						width: 30%;
+						.info_text_blog {
+							color: #000;
+							font-size: 18px;
+						}
+					}
+					.right_blog {
+						width: 68%;
+						img {
+							width: 100%;
+						}
+					}
+				}
+			}
+			.order {
+				text-align: center;
+				padding-top: 50px;
+				padding-bottom: 100px;
+				 a {
+				 	width: 230px;
+				 }
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+.header {
+	.centr_box {
+		.about_box {
+			@include LatoLight_font();
+			.about_title {
+				display: flex;
+				justify-content: space-between;
+				padding-top: 80px;
+				.title {
+					color: #000;
+					font-size: 48px;
+					text-transform: uppercase;
+				}
+				span {
+					a {
+						font-size: 24px;
+						line-height: 30px;
+						vertical-align: middle;
+						text-transform: uppercase;
+						transition: 0.5s ease;
+						color: #c1c1c1;
+						text-decoration: none;
+						@include LatoRegular_font();
+						&:hover {
+							color: #0023ff;
+						}
+						.fa-address-card {
+					    	font-size: 40px;
+					    	padding-left: 30px;
+					    }
+					}
+				}
+			}
+		}
+	}
+}

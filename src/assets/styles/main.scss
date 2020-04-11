@@ -9,7 +9,12 @@
 @import './layout/_variable.scss';
 @import './layout/_base.scss';
 @import './layout/_other.scss';
+@import './layout/_adaptive.scss';
 
 @import './section/_header.scss';
+@import './section/_price.scss';
+@import './section/_project.scss';
 @import './section/_project-single.scss';
-@import './section/_adaptive.scss';
+@import './section/_project-blog.scss';
+@import './section/_about.scss';
+
