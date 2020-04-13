@@ -1,0 +1,70 @@
+.header {
+	.centr_box {
+		.blog_container {
+			@include LatoLight_font();
+			background: #f9f9f9;
+			.blog_title {
+				display: flex;
+				justify-content: space-between;
+				padding-top: 80px;
+				padding-bottom: 100px;
+
+				.title {
+					color: #000;
+					font-size: 48px;
+					text-transform: uppercase;
+				}
+				span {
+					a {
+						font-size: 24px;
+						line-height: 30px;
+						vertical-align: middle;
+						text-transform: uppercase;
+						transition: 0.5s ease;
+						color: #c1c1c1;
+						text-decoration: none;
+						@include LatoRegular_font();
+						&:hover {
+							color: #0023ff;
+						}
+						.fa-blog {
+					    	font-size: 40px;
+					    	padding-left: 30px;
+					    }
+					}
+				}
+			}
+			.best_mouth {
+				display: flex;
+				.static_block {
+					width: 320px;
+					height: 440px;
+					display: flex;
+					background: #fff;
+					border-radius: 15px;
+					box-sizing: border-box;
+					padding: 30px 20px;
+					.title {
+						@include LatoRegular_font();
+						font-size: 42px;
+						color: #c1c1c1;
+					}
+				}
+				.mini_card_box {
+					display: flex;
+					.mini_card {
+						width: 320px;
+						height: 440px;
+						display: flex;
+						flex-direction: column;
+						background: #fff;
+						border-radius: 15px;
+						box-sizing: border-box;
+						padding: 30px 20px;
+						box-shadow: 1px 0 15px #B9B9B9;
+					}
+				}
+			}
+		}
+	}
+}

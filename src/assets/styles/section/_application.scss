@@ -1,0 +1,57 @@
+.header {
+	.centr_box {
+		.applic_container {
+			background: #f0f0f0;
+			@include LatoLight_font();
+
+			.applic_title {
+				display: flex;
+				justify-content: space-between;
+				padding-top: 80px;
+				padding-bottom: 100px;
+
+				.title {
+					color: #000;
+					font-size: 48px;
+					text-transform: uppercase;
+				}
+				span {
+					a {
+						font-size: 24px;
+						line-height: 30px;
+						vertical-align: middle;
+						text-transform: uppercase;
+						transition: 0.5s ease;
+						color: #c1c1c1;
+						text-decoration: none;
+						@include LatoRegular_font();
+						&:hover {
+							color: #0023ff;
+						}
+						.fa-wpforms {
+					    	font-size: 40px;
+					    	padding-left: 30px;
+					    }
+					}
+				}
+			}
+			.info_applic {
+				padding-bottom: 50px;
+				
+				.text_applic {
+					font-size: 20px;
+					color: #000;
+					line-height: 26px;
+					padding-bottom: 30px;
+				}
+				.text_block	{
+					width: 50%;
+					font-size: 20px;
+					color: #000;
+					line-height: 26px;
+				}
+
+			}
+		}
+	}
+}

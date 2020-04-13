@@ -1,0 +1,105 @@
+.header {
+	.centr_box {
+		.faq_container {
+			background: #fff;
+			@include LatoLight_font();
+			.faq_title {
+				display: flex;
+				justify-content: space-between;
+				padding-top: 80px;
+				.title {
+					color: #000;
+					font-size: 48px;
+					text-transform: uppercase;
+				}
+				span {
+					a {
+						font-size: 24px;
+						line-height: 30px;
+						vertical-align: middle;
+						text-transform: uppercase;
+						transition: 0.5s ease;
+						color: #c1c1c1;
+						text-decoration: none;
+						@include LatoRegular_font();
+						&:hover {
+							color: #0023ff;
+						}
+						.fa-question-circle {
+					    	font-size: 40px;
+					    	padding-left: 30px;
+					    }
+					}
+				}
+			}
+			.faq_container {
+				padding-top: 100px;
+				padding-bottom: 100px;
+				.smalltitle {
+					text-align: center;
+					font-size: 26px;
+					@include LatoRegular_font();
+					margin-bottom: 30px;
+				}
+				.faq_box	{
+					position: relative;
+					&::before {
+					    content: '';
+					    display: block;
+					    height: calc(100% + 40px);
+					    width: 1px;
+					    background: #f0f0f0;
+					    position: absolute;
+					    left: 0;
+					    right: 0;
+					    margin: auto;
+					    top: -20px;
+					}
+					.faq_content {
+						.faq_line {
+							display: flex;
+							align-items: center;
+							margin-top: 50px;
+							margin-bottom: 30px;
+							&:after {
+								content: '';
+								width: 150px;
+								display: block;
+								position: absolute;
+								height: 1px;
+								background: #f0f0f0;
+								left: 0;
+								right: 0;
+								margin: auto;
+							}
+							.left_box_faq {
+								margin-right: 100px;
+								flex-basis: 0;
+								flex-grow: 1;
+								text-align: right;
+							}
+							.question {
+									@include LatoRegular_font();
+									letter-spacing: 1px;
+									font-size: 26px;
+									color: #0023ff;
+								}
+							.right_box_faq {
+								margin-left: 100px;
+								flex-basis: 0;
+								flex-grow: 1;
+								text-align: left;
+							}
+							.answer {
+								font-size: 20px;
+								color: #000;
+								line-height: 26px;
+								padding: 30px 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

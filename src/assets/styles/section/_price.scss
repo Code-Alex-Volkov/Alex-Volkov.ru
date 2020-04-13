@@ -153,5 +153,57 @@
 				}
 			}
 		}
+		.service_container {
+			padding-top: 100px;
+			background: #f0f0f0;
+			.service_title {
+				.title {
+					text-align: center;
+					font-size: 40px;
+					padding-bottom: 30px;
+					@include LatoRegular_font();
+				}
+			}
+			.service_block {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				padding-bottom: 50px;
+				.service_list {
+					background: #fff;
+					width: 350px;
+					border: 1px solid #B9B9B9;
+					box-shadow: 1px 0 15px #B9B9B9;
+					padding: 20px;
+					box-sizing: border-box;
+					position: relative;
+					margin-bottom: 50px;
+					a.list_clik {
+						text-decoration: none;
+						.title_service {
+							color: #0023ff;
+							@include LatoRegular_font();
+							font-size: 32px;
+							padding-bottom: 20px;
+
+						}
+						.info_list {
+							font-size: 20px;
+							color: #000;
+							line-height: 22px;
+							@include LatoThin_font();
+						}
+					}
+					&:hover {
+						box-shadow: 0 0 5px #B9B9B9;
+						a {
+							.overlay {
+								opacity: 1;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
