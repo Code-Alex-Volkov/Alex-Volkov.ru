@@ -146,6 +146,7 @@
 		color: #000;
 		display: block;
 		padding-bottom: 20px;
+		@include LatoLight_font();
 	}
 	.ok_clik {
 		font-size: 20px;
@@ -153,12 +154,58 @@
 		color: #000;
 		display: block;
 		width: 50%;
+		@include LatoLight_font();
+
 		a {
 			font-size: 20px;
 			color: #000;
 			text-decoration: none;
+			@include LatoLight_font();
 			&:hover {
 				text-decoration: underline;
+			}
+		}
+	}
+}
+.blog_pag {
+	padding-bottom: 100px;
+	display: flex;
+	justify-content: center;
+	.pagination {
+		display: flex;
+		align-items: center;
+		li {
+			margin: 5px;
+			a {
+				text-decoration: none;
+				color: #000;
+				font-size: 20px;
+				padding: 8px 12px;
+				border: 1px solid #B9B9B9;
+				transition: 0.3s ease;
+				&:hover {
+					background: #B9B9B9;
+					color: #fff;
+					transition: 0.3s ease;
+				}
+				&.active {
+					background: #B9B9B9;
+					color: #fff;
+					transition: 0.3s ease;
+				}
+				&.prev_arr, &.next_arr {
+					border: none;
+					font-size: 26px;
+					color: #B9B9B9;
+					width: 30px;
+					height: 30px;
+					transition: 0.3s ease;
+					&:hover {
+						opacity: 0.6;
+						background: transparent;
+						transition: 0.3s ease;
+					}
+				}
 			}
 		}
 	}

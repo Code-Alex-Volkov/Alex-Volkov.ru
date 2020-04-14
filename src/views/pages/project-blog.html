@@ -32,7 +32,7 @@
 				<div class="wrapper">
 					<div class="project_blog_title">
 						<h1 class="title_blog">Название сайта</h1>
-						<span><a href="#">Проекты <i class="fas fa-project-diagram"></i></a></span>
+						<span><a href="project-single1.html">Landing Page <i class="fas fa-project-diagram"></i></a></span>
 					</div>
 					<div class="block_blog">
 						
@@ -81,7 +81,7 @@
 						</div>
 					</div>
 					<div class="btn_clic order">
-						<a href="#">Заказать такой сайт</a>
+						<a class="popup-btn" href="#">Заказать такой сайт</a>
 					</div>
 				</div>
 			</div>
@@ -95,19 +95,68 @@
 				</div>
 				<nav class="site_nav">
 					<ul>
-						<li><a href="#">Обо мне <i class="fas fa-address-card"></i></a></li>
-						<li><a href="#">Вопрос-ответ <i class="fas fa-question-circle"></i></a></li>
-						<li><a href="#">Проекты <i class="fas fa-project-diagram"></i></a></li>
-						<li><a href="#">Услуги <i class="fas fa-dollar-sign"></i></a></li>
-						<li><a href="#">Отзывы <i class="fas fa-user-clock"></i></a></li>
-						<li><a href="#">Оставить заявку <i class="fab fa-wpforms"></i></a></li>
-						<li><a href="#">Блог <i class="fas fa-blog"></i></a></li>
-						<li><a href="#">Контакты <i class="fas fa-id-card-alt"></i></a></li>
+						<li><a href="about.html">Обо мне <i class="fas fa-address-card"></i></a></li>
+						<li><a href="faq.html">Вопрос-ответ <i class="fas fa-question-circle"></i></a></li>
+						<li><a href="project.html">Проекты <i class="fas fa-project-diagram"></i></a></li>
+						<li><a href="price.html">Услуги <i class="fas fa-dollar-sign"></i></a></li>
+						<li><a href="review.html">Отзывы <i class="fas fa-user-clock"></i></a></li>
+						<li><a href="application.html">Оставить заявку <i class="fab fa-wpforms"></i></a></li>
+						<li><a href="blog.html">Блог <i class="fas fa-blog"></i></a></li>
+						<li><a href="contacts.html">Контакты <i class="fas fa-id-card-alt"></i></a></li>
 					</ul>
 				</nav>
 			</div>
 		</div>
 	</header>
+
+	<!--Модальное окно-->
+
+	<div class="popup">
+		<!-- Само (белое) модальное окно -->
+		<div class="popup-dialog">
+			<!-- Содержимое модального окна -->
+			<div class="popup-content">
+				<button class="popup-close">&times</button>
+				<!-- Заголовок окна -->
+				<div class="form_block">
+					<form action="#">
+						<div class="input_box">
+							<div class="input_block">
+								<label for="your_name">Ваше имя*</label>
+								<input type="text" id="your_name" class="input_name" name="your_name" required="true">
+							</div>
+							<div class="input_block">
+								<label for="your_email">E-mail адрес*</label>
+								<input type="email" id="your_email" class="input_email" name="your_email" required="true">
+							</div>
+						</div>
+						<div class="textarea_box">
+							<label for="your_message">Что обсудим?*</label>
+							<textarea name="your_message" class="textarea_message" id="your_message" cols="30" rows="10"></textarea>
+						</div>
+						<div class="submit_box">
+							<input type="submit" class="submit" value="Отправить сообщение">
+						</div>
+					</form>
+					<span class="bottom_text">Я отвечу в течении 24 часов, обещаю!</span>
+					<span class="ok_clik">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь <br> с <a href="#">политикой конфиденциальности</a>.</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<style>
+		.popup .popup-content {
+			width: 50%;
+		}
+		.popup .popup-content .form_block {
+			padding: 30px;
+			box-sizing: border-box;
+		}
+		.popup .popup-content .form_block .ok_clik {
+			width: 100%;
+		}
+	</style>
 
 	<script src="assets/scripts/vendors.bundle.js"></script>
 	<script src="assets/scripts/works.bundle.js"></script>

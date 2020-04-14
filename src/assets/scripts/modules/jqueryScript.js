@@ -43,6 +43,15 @@ if ($('.header_slider').length) {
 		});
 	}
 
+	$('.popup-btn').on('click', function(event) {
+		event.preventDefault();
+		$('.popup').fadeIn(400);
+	});
+	$('.popup-close').on('click', function(event) {
+		event.preventDefault();
+		$('.popup').fadeOut(400);
+	});
+
 });
 
 /*$('.testimonials_carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide){
