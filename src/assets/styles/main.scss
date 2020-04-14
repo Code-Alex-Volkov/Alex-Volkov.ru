@@ -9,7 +9,7 @@
 @import './layout/_variable.scss';
 @import './layout/_base.scss';
 @import './layout/_other.scss';
-@import './layout/_adaptive.scss';
+
 
 @import './section/_header.scss';
 @import './section/_about.scss';
@@ -24,3 +24,5 @@
 @import './section/_contacts.scss';
 
 @import './section/_popup.scss';
+
+@import './layout/_adaptive.scss';
