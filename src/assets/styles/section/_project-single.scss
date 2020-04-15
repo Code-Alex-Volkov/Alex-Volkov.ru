@@ -1,120 +1,125 @@
-.header {
-	.centr_box {
-		.project_single {
-			@include LatoLight_font();
-			.project_single_title {
-				display: flex;
-				justify-content: space-between;
-				padding-top: 80px;
+.centr_box {
+	.project_single {
+		@include LatoLight_font();
+		.project_single_title {
+			display: flex;
+			justify-content: space-between;
+			padding-top: 80px;
 
-				.title {
-					color: #000;
-					font-size: 48px;
+			.title {
+				color: #000;
+				font-size: 48px;
+				text-transform: uppercase;
+			}
+			span {
+				a {
+					font-size: 24px;
+					line-height: 30px;
+					vertical-align: middle;
 					text-transform: uppercase;
-				}
-				span {
-					a {
-						font-size: 24px;
-						line-height: 30px;
-						vertical-align: middle;
-						text-transform: uppercase;
-						transition: 0.5s ease;
-						color: #c1c1c1;
-						text-decoration: none;
-						@include LatoRegular_font();
-						&:hover {
-							color: #0023ff;
-						}
-						.fa-project-diagram {
-					    	font-size: 40px;
-					    	padding-left: 30px;
-					    }
-					}
-				}
-			}
-			.block_single {
-				display: flex;
-				justify-content: space-between;
-				padding-top: 50px;
-				position: relative;
-				.left_single {
-					width: 340px;
-					position: fixed;
-					.title_single {
-						padding-bottom: 50px;
+					transition: 0.5s ease;
+					color: #c1c1c1;
+					text-decoration: none;
+					@include LatoRegular_font();
+					&:hover {
 						color: #0023ff;
-						font-size: 40px;
 					}
-					.info_text_single {
-						color: #000;
-						font-size: 18px;
-					}
-					.btn_clic {
-						margin-top: 50px;
-						a {
-							width: 230px;
-						}
-					}
+					.fa-project-diagram {
+				    	font-size: 40px;
+				    	padding-left: 30px;
+				    }
 				}
-				.right_single {
-					display: flex;
-					flex-wrap: wrap;
-					justify-content: space-between;
-					position: absolute;
-					right: 0;
-					width: 68%;
-					.block_project_single {
-						width: 48%;
-						height: 220px;
-						background: #fff;
-						border: 1px solid #B9B9B9;
-						box-shadow: 1px 0 15px #B9B9B9;
-						margin-bottom: 30px;
-						&:hover {
-							box-shadow: 0 0 5px #B9B9B9;
-							a {
-								.overlay {
-									opacity: 1;
-								}
-							}
-						}
-
-						a {
-							display: flex;
-							text-decoration: none;
-							position: relative;
-														
-							.block_img {
-								max-width: 200px;
-								width: 100%;
-								height: 220px;
-								background-size: cover;
-							}
-							.block_title_site {
-								display: flex;
-								flex-direction: column;
-								justify-content: center;
-
-								.name_site {
-									font-size: 24px;
-									padding-bottom: 20px;
-									color: #0023ff;
-
-								}
-								.data_download {
-									font-size: 16px;
-									color: #000;
-								}
-							}
-							
-						}
+			}
+		}
+		.block_single {
+			display: flex;
+			justify-content: space-between;
+			padding-top: 50px;
+			position: relative;
+			.left_single {
+				width: 340px;
+				position: fixed;
+				.title_single {
+					padding-bottom: 50px;
+					color: #0023ff;
+					font-size: 40px;
+				}
+				.info_text_single {
+					color: #000;
+					font-size: 18px;
+				}
+				.btn_clic {
+					margin-top: 50px;
+					a {
+						width: 230px;
 					}
 				}
 			}
-			
+			.right_single {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				position: absolute;
+				right: 0;
+				width: 68%;
+				.block_project_single {
+					width: 48%;
+					height: 220px;
+					background: #fff;
+					border: 1px solid #000;
+					box-shadow: 0 0 5px #0023ff;
+					margin-bottom: 30px;
+					&:hover {
+						box-shadow: 0 0 8px #0023ff;
+						a {
+							.overlay {
+								opacity: 1;
+							}
+						}
+					}
+
+					a {
+						display: flex;
+						text-decoration: none;
+						position: relative;
+													
+						.block_img {
+							max-width: 200px;
+							
+							height: 220px;
+							overflow: hidden;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							img {
+								width: 100%;
+							}
+						}
+						.block_title_site {
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+
+							.name_site {
+								font-size: 24px;
+								padding-bottom: 20px;
+								color: #0023ff;
+
+							}
+							.data_download {
+								font-size: 16px;
+								color: #000;
+							}
+						}
+						
+					}
+				}
+			}
 		}
+		
 	}
 }
+
 
 @media (max-width: 1440px) {
 	.wrapper {
