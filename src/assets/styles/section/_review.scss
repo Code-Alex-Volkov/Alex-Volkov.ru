@@ -1,69 +1,88 @@
-.header {
-	.centr_box {
-		.review_container {
-			@include LatoLight_font();
-			.review_title {
-				display: flex;
-				justify-content: space-between;
-				padding-top: 80px;
-				.title {
-					color: #000;
-					font-size: 48px;
+.centr_box {
+	.review_container {
+		@include LatoLight_font();
+		background: #f0f0f0 url(../images/bg_block.jpg) no-repeat top right;
+		width: 100%;
+		background-color: #faf9ff;
+		.review_title {
+			display: flex;
+			justify-content: space-between;
+			padding-top: 80px;
+			.title {
+				color: #000;
+				font-size: 48px;
+				text-transform: uppercase;
+			}
+			span {
+				a {
+					font-size: 24px;
+					line-height: 30px;
+					vertical-align: middle;
 					text-transform: uppercase;
-				}
-				span {
-					a {
-						font-size: 24px;
-						line-height: 30px;
-						vertical-align: middle;
-						text-transform: uppercase;
-						transition: 0.5s ease;
-						color: #c1c1c1;
-						text-decoration: none;
-						@include LatoRegular_font();
-						&:hover {
-							color: #0023ff;
-						}
-						.fa-user-clock {
-					    	font-size: 40px;
-					    	padding-left: 30px;
-					    }
+					transition: 0.5s ease;
+					color: #c1c1c1;
+					text-decoration: none;
+					@include LatoRegular_font();
+					&:hover {
+						color: #0023ff;
 					}
+					.fa-user-clock {
+				    	font-size: 40px;
+				    	padding-left: 30px;
+				    }
 				}
 			}
-			.grid_container {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: space-between;
-				padding-top: 100px;
-				padding-bottom: 50px;
-				.review {
-					width: 100%;
-					background: #fff;
-					border: 1px solid #B9B9B9;
-					box-shadow: 1px 0 15px #B9B9B9;
-					margin-bottom: 35px;
-					padding: 30px;
-					box-sizing: border-box;
-					.title_review {
-						@include LatoRegular_font();
+		}
+		.grid_container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding-top: 100px;
+			padding-bottom: 50px;
+			.review {
+				width: 48%;
+				background: #fff;
+				border: 1px solid #000;
+				box-shadow: 0 0 5px #0023ff;
+				border-radius: 25px;
+				transition: 0.3s ease;
+				padding: 20px;
+				margin-bottom: 50px;
+				box-sizing: border-box;
+				position: relative;
+				.title_review {
+					@include LatoRegular_font();
+					color: #000;
+					font-size: 24px;
+					padding-bottom: 10px;
+				}
+				.review_position {
+					color: #c1c1c1;
+					font-size: 20px;
+					padding-bottom: 10px;
+					display: block;
+				}
+				.review_text {
+					p {
 						color: #000;
-						font-size: 24px;
-						padding-bottom: 10px;
-					}
-					.review_position {
-						color: #c1c1c1;
 						font-size: 20px;
-						padding-bottom: 10px;
-						display: block;
+						line-height: 26px;
+						padding-bottom: 20px;
 					}
-					.review_text {
-						p {
-							color: #000;
-							font-size: 20px;
-							line-height: 26px;
+				}
+				.click_contact {
+					color: #000;
+					font-size: 18px;
+					line-height: 26px;
+					position: absolute;
+					left: 20px;
+					bottom: 20px;
+					a {
+						&:hover {
+							text-decoration: none;
 						}
 					}
+					
 				}
 			}
 		}

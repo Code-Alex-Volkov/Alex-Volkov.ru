@@ -1,57 +1,50 @@
-.header {
-	.centr_box {
-		.applic_container {
-			background: #f0f0f0;
-			@include LatoLight_font();
+.centr_box {
+	.applic_container {
+		@include LatoLight_font();
+		background: #f0f0f0 url(../images/bg_block.jpg) no-repeat center;
+			width: 100%;
+			background-size: cover;
 
-			.applic_title {
-				display: flex;
-				justify-content: space-between;
-				padding-top: 80px;
-				padding-bottom: 100px;
+		.applic_title {
+			display: flex;
+			justify-content: space-between;
+			padding-top: 80px;
+			padding-bottom: 80px;
 
-				.title {
-					color: #000;
-					font-size: 48px;
+			.title {
+				color: #000;
+				font-size: 48px;
+				text-transform: uppercase;
+			}
+			span {
+				a {
+					font-size: 24px;
+					line-height: 30px;
+					vertical-align: middle;
 					text-transform: uppercase;
-				}
-				span {
-					a {
-						font-size: 24px;
-						line-height: 30px;
-						vertical-align: middle;
-						text-transform: uppercase;
-						transition: 0.5s ease;
-						color: #c1c1c1;
-						text-decoration: none;
-						@include LatoRegular_font();
-						&:hover {
-							color: #0023ff;
-						}
-						.fa-wpforms {
-					    	font-size: 40px;
-					    	padding-left: 30px;
-					    }
+					transition: 0.5s ease;
+					color: #c1c1c1;
+					text-decoration: none;
+					@include LatoRegular_font();
+					&:hover {
+						color: #0023ff;
 					}
+					.fa-wpforms {
+				    	font-size: 40px;
+				    	padding-left: 30px;
+				    }
 				}
 			}
-			.info_applic {
-				padding-bottom: 50px;
-				
-				.text_applic {
-					font-size: 20px;
-					color: #000;
-					line-height: 26px;
-					padding-bottom: 30px;
-				}
-				.text_block	{
-					width: 50%;
-					font-size: 20px;
-					color: #000;
-					line-height: 26px;
-				}
+		}
+		.info_applic {
+			padding-bottom: 50px;
+			.text_block	{
+				width: 50%;
+				font-size: 20px;
+				color: #000;
+				line-height: 26px;
+			}
 
-			}
 		}
 	}
 }

@@ -1,7 +1,8 @@
 .centr_box {
 	.blog_container {
 		@include LatoLight_font();
-		background: #f9f9f9;
+		background: #faf9ff;
+		margin-top: -20px;
 		.blog_title {
 			display: flex;
 			justify-content: space-between;
@@ -56,7 +57,7 @@
 					border-radius: 15px;
 					box-sizing: border-box;
 					padding: 20px;
-					border: 1px solid #000;
+					border: 1px solid #fff;
 					box-shadow: 0 0 5px #0023ff;
 					transition: 0.3s ease;
 					cursor: pointer;
@@ -175,7 +176,6 @@
 			article {
 				width: 48%;
 				background: #fff;
-				border: 1px solid #000;
 				box-shadow: 0 0 5px #0023ff;
 				border-radius: 25px;
 				transition: 0.3s ease;

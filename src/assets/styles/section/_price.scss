@@ -1,5 +1,6 @@
 .centr_box {
 	.price_container {
+		height: 100vh;
 		display: flex;
 		.left_block {
 			background: #fff;
@@ -20,12 +21,16 @@
 			}
 		}
 		.right_block {
+			
 			width: 54%;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
 			.project_tab_container {
 				background: #f0f0f0;
+				background: #f0f0f0 url(../images/header_bgg.png) no-repeat center;
+			width: 100%;
+			background-size: cover;
 				width: 100%;
 				@include LatoLight_font();
 				height: 60%;
@@ -145,8 +150,8 @@
 					img {
 						width: 90%;
 						height: auto;
-						border: 1px solid #B9B9B9;
-						box-shadow: 1px 0 15px #B9B9B9;
+						border: 1px solid #fff;
+						box-shadow: 1px 1px 5px #0023ff;
 					}
 				}
 				.slick-prev, .slick-next {
@@ -156,13 +161,14 @@
 		}
 	}
 	.service_container {
-		background: #f0f0f0 url(../images/bg_block.jpg) no-repeat center;
+		background: #f0f0f0 url(../images/header_bgg.png) no-repeat center;
 			width: 100%;
 			background-size: cover;
 		.service_title {
 			display: flex;
 			justify-content: space-between;
 			padding-top: 80px;
+			padding-bottom: 80px;
 			.title {
 				color: #000;
 				font-size: 48px;
@@ -186,14 +192,25 @@
 			.service_list {
 				background: #fff;
 				width: 350px;
-				border: 1px solid #B9B9B9;
-				box-shadow: 1px 0 15px #B9B9B9;
+				box-shadow: 0 0 5px #0023ff;
 				padding: 20px;
 				box-sizing: border-box;
 				position: relative;
 				margin-bottom: 50px;
-				a.list_clik {
+				transition: all 300ms ease-in-out;
+				.list_clik {
+					text-align: center;
 					text-decoration: none;
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					align-items: center;
+					.fa-strikethrough, .fa-wordpress-simple, .fa-medapps, .fa-shopify, .fa-sitemap, .fa-chart-bar {
+						font-size: 60px;
+						display: inline-block;
+						padding-bottom: 20px;
+						color: #0023ff;
+					}
 					.title_service {
 						color: #0023ff;
 						@include LatoRegular_font();
@@ -202,6 +219,7 @@
 
 					}
 					.info_list {
+						text-align: left;
 						font-size: 20px;
 						color: #000;
 						line-height: 22px;
@@ -209,7 +227,8 @@
 					}
 				}
 				&:hover {
-					box-shadow: 0 0 5px #B9B9B9;
+					transition: all 300ms ease-in-out;
+					box-shadow: 0 0 10px #0023ff;
 					a {
 						.overlay {
 							opacity: 1;

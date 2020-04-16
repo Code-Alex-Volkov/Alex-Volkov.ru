@@ -31,6 +31,7 @@ if ($('.header_slider').length) {
 			slidesToScroll: 1,
 			asNavFor: '.project_slider',
 			dots: false,
+			arrows: false,
 			//centerMode: false,
 			focusOnSelect: true
 		});
