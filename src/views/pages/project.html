@@ -25,6 +25,10 @@
 		<div class="github">
 			<a href="#" class="github"><i class="fab fa-github"></i></a>
 		</div>
+		<div class="mail_block popup-btn">
+			<a href="#" class="open_popup">Заказать разработку сайта</a>
+			<a href="#" class="mail"><i class="fas fa-envelope-open-text"></i></a>
+		</div>
 	</section>
 	<section class="centr_box">
 		<div class="project_box">
@@ -103,18 +107,54 @@
 			</div>
 			<nav class="site_nav">
 				<ul>
-					<li><a href="about.html">Обо мне <i class="fas fa-address-card"></i></a></li>
-					<li><a href="faq.html">Вопрос-ответ <i class="fas fa-question-circle"></i></a></li>
-					<li><a href="project.html">Проекты <i class="fas fa-project-diagram"></i></a></li>
-					<li><a href="services.html">Услуги <i class="fas fa-dollar-sign"></i></a></li>
-					<li><a href="price.html">Цены <i class="fas fa-dollar-sign"></i></a></li>
-					<li><a href="review.html">Отзывы <i class="fas fa-user-clock"></i></a></li>
-					<li><a href="blog.html">Блог <i class="fas fa-blog"></i></a></li>
-					<li><a href="contacts.html">Контакты <i class="fas fa-id-card-alt"></i></a></li>
+					<li><a href="about.html">Обо мне</a></li>
+					<li><a href="faq.html">Вопрос-ответ</a></li>
+					<li><a href="project.html">Проекты</a></li>
+					<li><a href="services.html">Услуги</a></li>
+					<li><a href="price.html">Цены</a></li>
+					<li><a href="review.html">Отзывы</a></li>
+					<li><a href="blog.html">Блог</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 			</nav>
 		</div>
 	</section>
+
+	<!--Модальное окно-->
+
+	<div class="popup">
+		<!-- Само (белое) модальное окно -->
+		<div class="popup-dialog">
+			<!-- Содержимое модального окна -->
+			<div class="popup-content">
+				<button class="popup-close">&times</button>
+				<!-- Заголовок окна -->
+				<div class="form_block_popup">
+					<form action="#">
+						<div class="input_box">
+							<div class="input_block">
+								<label for="your_name">Ваше имя*</label>
+								<input type="text" id="your_name" class="input_name" name="your_name" required="true">
+							</div>
+							<div class="input_block">
+								<label for="your_email">E-mail адрес*</label>
+								<input type="email" id="your_email" class="input_email" name="your_email" required="true">
+							</div>
+						</div>
+						<div class="textarea_box">
+							<label for="your_message">Что обсудим?*</label>
+							<textarea name="your_message" class="textarea_message" id="your_message" cols="30" rows="10"></textarea>
+						</div>
+						<div class="submit_box">
+							<input type="submit" class="submit" value="Отправить сообщение">
+						</div>
+					</form>
+					<span class="bottom_text">Я отвечу в течении 24 часов, обещаю!</span>
+					<span class="ok_clik">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь <br> с <a href="#">политикой конфиденциальности</a>.</span>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="assets/scripts/vendors.bundle.js"></script>
 	<script src="assets/scripts/works.bundle.js"></script>

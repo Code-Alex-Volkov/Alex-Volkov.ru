@@ -2,6 +2,10 @@
 	.project_single {
 		@include LatoLight_font();
 		background-color: #faf9ff;
+		background: url(../images/header_bgg.png) no-repeat center;
+		width: 100%;
+		background-size: cover;
+		padding-bottom: 100px;
 		.project_single_title {
 			display: flex;
 			justify-content: space-between;
