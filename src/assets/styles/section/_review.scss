@@ -94,14 +94,23 @@
 		max-width: 960px;
 		margin: 0 auto;
 	}
-}
-
-@media (max-width: 1200px) {
-
+	.centr_box .review_container .review_title .title {
+		font-size: 32px;
+		color: #fff;
+	}
+	.centr_box .review_container .grid_container .review .review_text p {
+		font-size: 18px;
+		line-height: 22px;
+	}
+	.centr_box .review_container .grid_container {
+		padding-top: 80px;
+	}
 }
 
 @media (max-width: 992px) {
-
+	.centr_box .review_container .grid_container .review {
+		width: 100%;
+	}
 }
 
 @media (max-width: 768px) {

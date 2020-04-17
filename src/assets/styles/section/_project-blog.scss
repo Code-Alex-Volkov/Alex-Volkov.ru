@@ -74,21 +74,17 @@
 	}
 }
 
-
-@media (max-width: 1440px) {
-	.wrapper {
-		width: 100%;
-		max-width: 960px;
-		margin: 0 auto;
-	}
-}
-
-@media (max-width: 1200px) {
-
-}
-
 @media (max-width: 992px) {
-
+	.centr_box .project_blog .project_blog_title span a {
+		font-size: 20px;
+	}
+	.centr_box .project_blog .project_blog_title .title_blog {
+		font-size: 32px;
+	}
+	.centr_box .project_blog .block_blog .btn_clic a {
+		width: 160px;
+		padding: 15px 20px;
+	}
 }
 
 @media (max-width: 768px) {

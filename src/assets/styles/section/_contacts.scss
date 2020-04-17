@@ -84,19 +84,52 @@
 }
 
 @media (max-width: 1440px) {
-	.wrapper {
-		width: 100%;
-		max-width: 960px;
-		margin: 0 auto;
+	.centr_box .contact_box .contact_title .title {
+		font-size: 32px;
+	}
+	.centr_box .contact_box .contact_info .sub_title {
+		font-size: 28px;
+		padding-bottom: 0;
 	}
 }
 
-@media (max-width: 1200px) {
-
-}
-
 @media (max-width: 992px) {
-
+	.centr_box .contact_box .contact_info .sub_title {
+		width: 100%;
+		font-size: 24px;
+		padding-top: 30px;
+	}
+	.centr_box .contact_box .contact_info {
+		padding-bottom: 40px;
+	}
+	.form_block_popup label, .form_block label {
+		font-size: 20px;
+	}
+	.form_block .input_box .input_block input[type="email"], .form_block .input_box .input_block input[type="text"] {
+		height: 50px;
+	}
+	.form_block .submit_box .submit {
+		font-size: 16px;
+	}
+	.form_block .textarea_box {
+		margin-bottom: 30px;
+	}
+	.form_block .ok_clik {
+		width: 100%;
+	}
+	.form_block .submit_box {
+		padding-bottom: 30px;
+	}
+	.form_block .textarea_box textarea.textarea_message {
+		height: 150px;
+	}
+	.form_block .submit_box .submit {
+		width: 250px;
+		padding: 15px 20px;
+	}
+	.form_block {
+		padding-bottom: 50px;
+	}
 }
 
 @media (max-width: 768px) {

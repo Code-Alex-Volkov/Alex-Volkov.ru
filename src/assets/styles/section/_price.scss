@@ -1,6 +1,5 @@
 .centr_box {
 	.price_container {
-		height: 100vh;
 		display: flex;
 		.left_block {
 			background: #fff;
@@ -9,19 +8,14 @@
 			z-index: 80;
 			.project_slider {
 				padding-left: 80px;
-				.slick-list {
-					height: 100vh;
-				}
 				.slid {
 					img {
 						max-width: 100%;
-						height: 100vh;
 					}
 				}
 			}
 		}
 		.right_block {
-			
 			width: 54%;
 			display: flex;
 			flex-direction: column;
@@ -93,6 +87,7 @@
 						display: flex;
 						padding-left: 80px;
 						padding-right: 80px;
+						padding-bottom: 80px;
 						justify-content: space-between;
 						align-items: center;
 						.time_block {
@@ -241,19 +236,67 @@
 }
 
 @media (max-width: 1440px) {
-	.wrapper {
-		width: 100%;
-		max-width: 960px;
-		margin: 0 auto;
+	.centr_box .service_container .service_title .title {
+		font-size: 32px;
+	}
+	.centr_box .service_container .service_block .service_list {
+		width: 300px;
+	}
+	.centr_box .price_container .right_block .project_tab_container .top_box h2.title {
+		padding-bottom: 80px;
+		font-size: 32px;
+	}
+	.centr_box .price_container .right_block .project_tab_container .top_box h1.title_project {
+		font-size: 42px;
+		padding-bottom: 20px;
+	}
+	.centr_box .price_container .right_block .project_tab_container .top_box .sub_title {
+		font-size: 20px;
+	}
+	.centr_box .service_container .service_block .service_list .list_clik .info_list {
+		font-size: 18px;
 	}
 }
 
-@media (max-width: 1200px) {
-
-}
-
 @media (max-width: 992px) {
-
+	.centr_box .price_container .right_block .project_tab_container .top_box h2.title {
+		padding: 50px 0 50px 50px;
+	}
+	.centr_box .price_container .right_block .project_tab_container .top_box h1.title_project {
+		font-size: 32px;
+		padding-left: 50px;
+	}
+	.centr_box .price_container .right_block .project_tab_container .top_box .sub_title {
+		font-size: 18px;
+		padding-left: 50px;
+		padding-bottom: 30px;
+		padding-right: 20px;
+	}
+	.centr_box .price_container .right_block .project_tab_container .top_box .price_box {
+		padding-left: 50px;
+		padding-right: 20px;
+	}
+	.centr_box .price_container .right_block .project_tab_container .top_box .price_box .time_block .time {
+		font-size: 18px;
+	}
+	.centr_box .price_container .right_block .project_tab_container .top_box .price_box .price_block .price {
+		font-size: 18px;
+	}
+	.centr_box .price_container .right_block .project_tab_container .top_box .price_box .btn_clic a {
+		width: 130px;
+		padding: 15px 20px;
+	}
+	.centr_box .service_container .service_block .service_list {
+		width: 230px;
+		margin-bottom: 35px;
+	}
+	.centr_box .service_container .service_block .service_list .list_clik .title_service {
+		font-size: 24px;
+	}
+	.centr_box .service_container .service_block .service_list .list_clik .info_list {
+		line-height: 18px;
+		font-size: 16px;
+	}
 }
 
 @media (max-width: 768px) {

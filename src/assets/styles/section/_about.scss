@@ -40,7 +40,7 @@
 			.img_about {
 				flex-basis: 40%;
 				position: relative;
-				z-index: 90;
+				z-index: 10;
 			}
 			.info_about {
 				background: #f0f0f0;
@@ -201,14 +201,37 @@
 		max-width: 960px;
 		margin: 0 auto;
 	}
-}
-
-@media (max-width: 1200px) {
-
+	.centr_box .about_box .about_title .title {
+		font-size: 32px;
+	}
+	.centr_box .about_box .history_box .history_container .time_line_box .time_content .time_line .info_time {
+		font-size: 28px;
+	}
 }
 
 @media (max-width: 992px) {
-
+	.centr_box .about_box .acquaintance .img_about img {
+		width: 100%;
+	}
+	.centr_box .about_box .acquaintance .info_about .info_text {
+		font-size: 18px;
+		line-height: 20px;
+		margin-bottom: 10px;
+	}
+	.centr_box .about_box .acquaintance .info_about {
+		padding: 50px 60px;
+	}
+	.centr_box .about_box .history_box .history_container .smalltitle {
+		font-size: 24px;
+	}
+	.centr_box .about_box .history_box .history_container .time_line_box .time_content .time_line .info_time {
+		font-size: 24px;
+		padding: 0;
+	}
+	.centr_box .about_box .freelance_box .freelance_container .about_why .right_block_why p {
+		font-size: 18px;
+		line-height: 22px;
+	}
 }
 
 @media (max-width: 768px) {

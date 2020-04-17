@@ -95,19 +95,26 @@
 }
 
 @media (max-width: 1440px) {
-	.wrapper {
-		width: 100%;
-		max-width: 960px;
-		margin: 0 auto;
+	.centr_box .project_box .project_title .title {
+		font-size: 32px;
 	}
 }
 
-@media (max-width: 1200px) {
-
-}
-
 @media (max-width: 992px) {
+	.centr_box .project_box .projects .project {
+		width: 47%;
+		margin-bottom: 35px;
+	}
+	.centr_box .project_box .projects .project {
+		height: 200px;
+	}
+	.centr_box .project_box .projects .project a .img_box {
+		display: none;
+	}
 
+	.centr_box .project_box .projects .project a .img_box img {
+		height: 200px;
+	}
 }
 
 @media (max-width: 768px) {

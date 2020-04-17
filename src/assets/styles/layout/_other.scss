@@ -215,3 +215,16 @@
 		}
 	}
 }
+
+@media (max-width: 1440px) {
+	.form_block .bottom_text, .form_block_popup .bottom_text {
+		font-size: 18px;
+	}
+	.form_block .ok_clik, .form_block_popup .ok_clik {
+		font-size: 18px;
+		padding-bottom: 10px;
+	}
+	.form_block .ok_clik a, .form_block_popup .ok_clik a {
+		font-size: 18px;
+	}
+}
