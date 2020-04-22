@@ -61,6 +61,47 @@
 				line-height: 20px;
 			}
 		}
+	}	
+}
+
+@media (max-width: 992px) {
+	.popup .popup-content {
+		width: 50%;
 	}
-	
+	.form_block_popup .textarea_box {
+		height: 150px;
+		margin-bottom: 30px;
+	}
+	.form_block_popup .submit_box .submit {
+		font-size: 14px;
+		padding: 15px 20px;
+		width: 240px;
+	}
+	.popup .popup-content .form_block_popup .bottom_text, .popup .popup-content .form_block_popup .ok_clik {
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.popup .popup-content .form_block_popup .ok_clik a {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 768px) {
+	.popup .popup-content {
+		width: 70%;
+	}
+}
+
+@media (max-width: 576px) {
+	.popup .popup-content {
+		width: 90%;
+	}
+	.popup .popup-content .popup-close {
+		top: -12px;
+		right: 20px;
+		color: #000;
+	}
+	.form_block_popup .input_box .input_block:not(:last-child) {
+		margin-bottom: 0;
+	}
 }

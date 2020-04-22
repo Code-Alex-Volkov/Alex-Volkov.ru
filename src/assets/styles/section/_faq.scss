@@ -124,16 +124,85 @@
 	.centr_box .faq_container .faq_container .faq_box .faq_content .faq_line {
 		margin: 0;
 	}
+	.centr_box .faq_container .faq_container .faq_box .faq_content .faq_line .right_box_faq {
+		margin-left: 50px;
+	}
+	.centr_box .faq_container .faq_container .faq_box .faq_content .faq_line .left_box_faq {
+		margin-right: 50px;
+	}
+	.centr_box .faq_container .faq_container .faq_box .faq_content .faq_line::after { 
+		width: 80px;
+	}
 }
 
 @media (max-width: 768px) {
-
+	.centr_box .faq_container .faq_title {
+		padding-top: 30px;
+	}
+	.centr_box .faq_container .faq_container {
+		padding-top: 40px;
+	}
+	.centr_box .faq_container .faq_container .faq_box .faq_content .faq_line .answer {
+	    font-size: 16px;
+	    line-height: 18px;
+	}
+	.centr_box .faq_container .faq_container .faq_box .faq_content .faq_line .question {
+		font-size: 16px;
+	}
+	.form_block .bottom_text, .form_block_popup .bottom_text {
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.form_block .ok_clik, .form_block_popup .ok_clik {
+		font-size: 16px;
+	}
+	.form_block .ok_clik a, .form_block_popup .ok_clik a {
+		font-size: 16px;
+	}
+	.form_block_popup label, .form_block label {
+		padding-bottom: 5px;
+	}
+	.faq_container .form_block .submit_box .submit {
+		font-size: 14px;
+		width: 220px;
+	}
 }
 
 @media (max-width: 576px) {
-
-}
-
-@media (max-width: 360px) {
-
+	.centr_box .faq_container .faq_container .faq_box::before {
+		display: none;
+	}
+	.centr_box .faq_container .faq_title .title {
+		font-size: 26px;
+	}
+	.centr_box .faq_container .faq_container .smalltitle {
+		font-size: 20px;
+	}
+	.centr_box .faq_container .faq_container .faq_box .faq_content .faq_line::after {
+		display: none;
+	}
+	.centr_box .faq_container .faq_container .faq_box .faq_content .faq_line .left_box_faq {
+		margin-right: 10px;
+	}
+	.centr_box .faq_container .faq_container .faq_box .faq_content .faq_line .right_box_faq {
+		margin-left: 10px;
+	}
+	.form_block .input_box .input_block, .form_block_popup .input_box .input_block {
+		width: 100%;
+		&:not(:last-child) {
+		  margin-bottom: 20px;
+		}
+	}
+	.form_block .input_box, .form_block_popup .input_box {
+		flex-wrap: wrap;
+	}
+	.form_block .submit_box {
+		text-align: center;
+	}
+	.form_block .bottom_text, .form_block_popup .bottom_text {
+		text-align: center;
+	}
+	.form_block .ok_clik {
+		text-align: center;
+	}
 }

@@ -133,13 +133,16 @@
 }
 
 @media (max-width: 768px) {
-
+	.centr_box .contact_box .contact_title {
+		padding-top: 30px;
+	}
+	.centr_box .contact_box .contact_info .sub_title {
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 576px) {
-
-}
-
-@media (max-width: 360px) {
-
+	.centr_box .contact_box .contact_info .sub_title {
+		font-size: 18px;
+	}
 }

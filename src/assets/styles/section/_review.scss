@@ -73,9 +73,6 @@
 					color: #000;
 					font-size: 18px;
 					line-height: 26px;
-					position: absolute;
-					left: 20px;
-					bottom: 20px;
 					a {
 						&:hover {
 							text-decoration: none;
@@ -89,11 +86,6 @@
 }
 
 @media (max-width: 1440px) {
-	.wrapper {
-		width: 100%;
-		max-width: 960px;
-		margin: 0 auto;
-	}
 	.centr_box .review_container .review_title .title {
 		font-size: 32px;
 		color: #fff;
@@ -114,13 +106,13 @@
 }
 
 @media (max-width: 768px) {
-
+	.centr_box .review_container .review_title {
+		padding-top: 30px;
+	}
 }
 
 @media (max-width: 576px) {
-
-}
-
-@media (max-width: 360px) {
-
+	.centr_box .review_container .grid_container {
+		padding-top: 30px;
+	}
 }

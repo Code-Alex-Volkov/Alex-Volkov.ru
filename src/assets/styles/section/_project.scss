@@ -118,13 +118,29 @@
 }
 
 @media (max-width: 768px) {
-
+	.centr_box .project_box .project_title {
+		padding-top: 30px;
+	}
+	.centr_box .project_box .projects .project {
+		height: 300px;
+	}
+	.centr_box .project_box .projects .project a .info_box .title_site {
+		font-size: 22px;
+	}
 }
 
 @media (max-width: 576px) {
-
-}
-
-@media (max-width: 360px) {
-
+	.centr_box .project_box .projects .project {
+		width: 100%;
+		height: auto;
+	}
+	.info_project_text {
+		width: auto;
+	}
+	.centr_box .project_box .project_title .title {
+		font-size: 26px;
+	}
+	.info_project_text {
+		font-size: 18px;
+	}
 }

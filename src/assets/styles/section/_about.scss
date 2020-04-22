@@ -106,7 +106,6 @@
 							display: flex;
 							align-items: center;
 							margin-top: 50px;
-							margin-bottom: 30px;
 							&:after {
 								content: '';
 								width: 150px;
@@ -196,11 +195,6 @@
 }
 
 @media (max-width: 1440px) {
-	.wrapper {
-		width: 100%;
-		max-width: 960px;
-		margin: 0 auto;
-	}
 	.centr_box .about_box .about_title .title {
 		font-size: 32px;
 	}
@@ -209,7 +203,7 @@
 	}
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
 	.centr_box .about_box .acquaintance .img_about img {
 		width: 100%;
 	}
@@ -234,14 +228,128 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+	.centr_box .about_box .acquaintance .info_about .info_text {
+	    font-size: 16px;
+	    line-height: 18px;
+	}
+	.centr_box .about_box .history_box .history_container .time_line_box .time_content .time_line .info_time {
+		font-size: 22px;
+	}
+	.centr_box .about_box .history_box .history_container .time_line_box .time_content .time_line .time {
+		font-size: 18px;
+	}
+	.centr_box .about_box .history_box .history_container .time_line_box .time_content .time_line .right_box_time {
+		margin-left: 50px;
+	}
+	.centr_box .about_box .history_box .history_container .time_line_box .time_content .time_line .left_box_time {
+		margin-right: 50px;
+	}
+	.centr_box .about_box .history_box .history_container .time_line_box .time_content .time_line::after { 
+		width: 80px;
+	}
+}
 
+@media (max-width: 768px) {
+	.centr_box .about_box .about_title {
+		padding-top: 30px;
+	}
+	.centr_box .about_box .acquaintance {
+		align-items: flex-start;
+		.img_about {
+			padding-top: 40px;
+		}
+	}
+	.centr_box .about_box .acquaintance .info_about {
+		padding: 40px 20px 40px 60px;
+	}
+	.centr_box .about_box .history_box .history_container .time_line_box .time_content .time_line .time {
+		font-size: 14px;
+	}
+	.centr_box .about_box .history_box .history_container .time_line_box .time_content .time_line .info_time {
+		font-size: 16px;
+		margin-top: 30px;
+	}
+	.centr_box .about_box .freelance_box .freelance_container .about_why .left_block_why {
+		flex-basis: 50%;
+	}
+	.centr_box .about_box .freelance_box .freelance_container .about_why .right_block_why {
+		flex-basis: 50%;
+	}
+	.centr_box .about_box .order {
+		margin-left: 0;
+	}
+	.about_box .btn_clic a {
+		font-size: 14px;
+	}
+	.centr_box .about_box .order a {
+		width: 180px;
+	}
+	.centr_box .about_box .order {
+		text-align: center;
+	}
+	.centr_box .about_box .freelance_box {
+		padding-top: 40px;
+	}
+	.centr_box .about_box .freelance_box .freelance_container .about_why .right_block_why p {
+		padding-top: 0;
+		padding-left: 10px;
+	}
+	.centr_box .about_box .freelance_box .freelance_container .about_why .right_block_why p {
+	    font-size: 16px;
+	    line-height: 18px;
+	}
+	.centr_box .about_box .freelance_box .freelance_container .about_why .left_block_why, .centr_box .about_box .freelance_box .freelance_container .about_why .right_block_why {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.centr_box .about_box .history_box .history_container .time_line_box .time_content .time_line {
+		margin-top: 30px;
+	}
 }
 
 @media (max-width: 576px) {
-
-}
-
-@media (max-width: 360px) {
-
+	.centr_box .about_box .acquaintance {
+		display: block;
+	}
+	.centr_box .about_box .about_title .title {
+		font-size: 26px;
+	}
+	.centr_box .about_box .acquaintance .info_about {
+		margin-left: 0;
+	}
+	.centr_box .about_box .acquaintance {
+		margin-top: 40px;
+	}
+	.centr_box .about_box .acquaintance .img_about {
+		padding-top: 0;
+		margin-bottom: 30px;
+	}
+	.centr_box .about_box .acquaintance .info_about {
+		padding: 20px 10px;
+	}
+	.centr_box .about_box .history_box .history_container .time_line_box .time_content .time_line .right_box_time {
+		margin-left: 20px;
+	}
+	.centr_box .about_box .history_box .history_container .time_line_box .time_content .time_line .left_box_time {
+		margin-right: 20px;
+	}
+	.centr_box .about_box .history_box .history_container .time_line_box .time_content .time_line::after { 
+		width: 20px;
+	}
+	.centr_box .about_box .freelance_box .freelance_container .about_why .left_block_why {
+		display: none;
+	}
+	.centr_box .about_box .freelance_box .freelance_container .smalltitle {
+		color: #000;
+	}
+	.centr_box .about_box .freelance_box .freelance_container .about_why .right_block_why p {
+		padding-left: 0;
+		color: #000;
+		text-align: center;
+	}
+	.centr_box .about_box .freelance_box {
+		background: #f0f0f0;
+	}
 }

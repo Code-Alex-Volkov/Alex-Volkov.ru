@@ -297,16 +297,37 @@
 		line-height: 18px;
 		font-size: 16px;
 	}
+	.centr_box .service_container .service_block .service_list {
+		width: 32%;
+	}
+	.centr_box .service_container .service_block .service_list .list_clik .fa-chart-bar, .centr_box .service_container .service_block .service_list .list_clik .fa-medapps, .centr_box .service_container .service_block .service_list .list_clik .fa-shopify, .centr_box .service_container .service_block .service_list .list_clik .fa-sitemap, .centr_box .service_container .service_block .service_list .list_clik .fa-strikethrough, .centr_box .service_container .service_block .service_list .list_clik .fa-wordpress-simple {
+			font-size: 40px;
+	}
+	.centr_box .service_container .service_block .service_list .list_clik .title_service {
+		font-size: 22px;
+	}
+	.centr_box .service_container .service_block .service_list {
+		padding: 10px;
+	}
 }
 
 @media (max-width: 768px) {
-
+	.centr_box .service_container .service_block .service_list {
+		width: 48%;
+	}
+	.centr_box .service_container .service_title {
+		padding-top: 30px;
+	}
 }
 
 @media (max-width: 576px) {
-
-}
-
-@media (max-width: 360px) {
-
+	.centr_box .service_container .service_title .title {
+		font-size: 26px;
+	}
+	.centr_box .service_container .service_title {
+		padding-bottom: 30px;
+	}
+	.centr_box .service_container .service_block .service_list {
+		width: 100%;
+	}
 }
