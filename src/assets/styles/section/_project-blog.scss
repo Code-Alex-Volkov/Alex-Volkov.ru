@@ -9,6 +9,7 @@
 				color: #0023ff;
 				font-size: 48px;
 				text-transform: uppercase;
+				@include LatoRegular_font();
 			}
 			span {
 				a {

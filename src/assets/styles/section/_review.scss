@@ -12,6 +12,7 @@
 				color: #000;
 				font-size: 48px;
 				text-transform: uppercase;
+				@include LatoRegular_font();
 			}
 			span {
 				a {
@@ -42,8 +43,7 @@
 			.review {
 				width: 48%;
 				background: #fff;
-				box-shadow: 0 0 5px #0023ff;
-				border-radius: 25px;
+				box-shadow: 1px 1px 3px #c1c1c1;
 				transition: 0.3s ease;
 				padding: 20px;
 				margin-bottom: 50px;

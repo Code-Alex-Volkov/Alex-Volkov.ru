@@ -1,6 +1,6 @@
 .left_box {
 	width: 80px;
-	height: 100vh;
+	height: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -19,9 +19,10 @@
 		a {
 			font-size: 28px;
 			color: #0023ff;
+			opacity: 0.7;
 			transition: all 0.3s;
 			&:hover {
-				opacity: 0.7;
+				opacity: 1;
 				transition: all 0.3s;
 			}
 		}
@@ -36,7 +37,7 @@
 			transition: all 0.5s;
 		}
 		.open_popup {
-			background: #0023ff;
+			background: rgba(0,35,255,0.7);
 			margin-top: -35px;
 			width: 195px;
 			padding: 5px 10px;
@@ -50,6 +51,7 @@
 		.fa-envelope-open-text {
 			font-size: 28px;
 			color: #0023ff;
+			opacity: 0.7;
 		}
 	}
 }
@@ -58,55 +60,24 @@
 		.slid {
 			height: 100vh;
 			text-align: center;
-
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 			.title {
 				font-size: 100px;
 				@include LatoThin_font();
 				color: #000;
-				padding-top: 180px;
 			}
 			.sub_title {
 				font-size: 32px;
 				@include LatoLight_font();
 				color: #000;
-				padding-top: 50px;
+				padding-top: 100px;
 				padding-bottom: 120px;
 			}
-		}
-		&.slick-dotted.slick-slider {
-			margin-bottom: 0;
-		}
-		.slick-dots {
-			bottom: 25px;
-			text-align: right;
-			right: 50px;
-			li {
-				&:not(:last-child) {
-				  margin-right: 20px;
-				}
-				button {
-					&::before {
-						content: "";
-						width: 8px;
-						height: 8px;
-						opacity: 1;
-						background: transparent;
-						border-radius: 100%;
-						border: 2px solid #d9d9d9
-					}
-				}
-				&.slick-active {
-					button {
-						&::before {
-							content: "";
-							width: 8px;
-							height: 8px;
-							background: #0023ff;
-							border-radius: 100%;
-							border: 2px solid #0023ff
-						}
-					}
-				}
+			.btn_clic a {
+				width: 260px;
 			}
 		}
 	}
@@ -173,15 +144,19 @@
 			box-shadow: -1px 0 5px #B9B9B9;
 			z-index: 80;
 			transition: 0.5s ease;
+			overflow-y: scroll;
 			&.side-active {
 			    right: 0;
 			}
 			ul {
 				text-align: right;
-				margin-top: 100px;
+				margin-top: 70px;
 				margin-right: 70px;
 				li {
 					margin-bottom: 10px;
+					&.mobile_soc {
+						display: none;
+					}
 					a {
 					    position: relative;
 					    line-height: 30px;
@@ -202,6 +177,23 @@
 					    	width: 50px;
 					    	text-align: center;
 					    }
+					}
+					ul {
+						display: flex;
+						margin-right: 0;
+						margin-top: 30px;
+						justify-content: flex-end;
+						li {
+							display: inline-block;
+							&:not(:last-child) {
+							   margin-right: 25px;
+							}
+							a {
+								font-size: 28px;
+								color: #0023ff;
+								opacity: 0.7;
+							}
+						}
 					}
 				}
 			}
@@ -251,27 +243,30 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 896px) {
 	.wrapper {
 		max-width: 576px !important;
+	}
+	.left_box {
+		display: none;
+	}
+	.right_box .menu .site_nav ul li.mobile_soc {
+		display: block;
+	}
+	.centr_box {
+		padding-left: 0;
 	}
 	.centr_box .header_slider .slid .title {
 		font-size: 40px;
 	}
 	.centr_box .header_slider .slid .sub_title {
 		font-size: 20px;
+		padding-top: 10%;
+		padding-bottom: 15%;
 	}
 	.btn_clic a {
 		font-size: 14px;
 		padding: 15px 20px;
-	}
-	.centr_box .header_slider .slick-dots {
-		right: 10px;
-	}
-	.centr_box .header_slider .slick-dots li {
-		&:not(:last-child) {
-		  margin-right: 10px;
-		}
 	}
 }
 

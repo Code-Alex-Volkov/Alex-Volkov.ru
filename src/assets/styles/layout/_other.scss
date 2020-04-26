@@ -1,5 +1,9 @@
 // #f9f9f9 Новый фон для сайта
 
+.over_hidden {
+	overflow: hidden;
+}
+
 .centr_box {
 	padding-left: 80px;
 	
@@ -17,7 +21,7 @@
 		border-radius: 5px;
 		text-decoration: none;
 		text-transform: uppercase;
-		border: 1px solid #000;
+		border: 1px solid #0023ff;
 		transition: all 200ms ease-in-out;
 		&:hover {
 			border: 1px solid #0023ff;
@@ -123,7 +127,7 @@
 			border-radius: 5px;
 			text-decoration: none;
 			text-transform: uppercase;
-			border: 1px solid #000;
+			border: 1px solid #0023ff;
 			width: 280px;
 			cursor: pointer;
 			transition: all 200ms ease-in-out;

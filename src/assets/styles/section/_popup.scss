@@ -11,9 +11,9 @@
 	.popup-content {
 		position: fixed;
 		left: 50%;
-		top: 10%;
+		top:50%;
+		transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
-		transform: translateX(-50%);
 		width: 25%;
 		text-align: center;
 		.popup-close {
@@ -64,6 +64,18 @@
 	}	
 }
 
+@media (max-width: 1200px) {
+	.popup .popup-content {
+		width: 50%;
+	}
+	.form_block_popup .submit_box .submit {
+		padding: 15px 20px;
+	}
+	.form_block_popup .textarea_box textarea.textarea_message {
+		height: 120px;
+	}
+}
+
 @media (max-width: 992px) {
 	.popup .popup-content {
 		width: 50%;
@@ -89,6 +101,7 @@
 @media (max-width: 768px) {
 	.popup .popup-content {
 		width: 70%;
+		
 	}
 }
 

@@ -4,17 +4,12 @@ var $ = require("jquery");
 $(document).ready(function(){
 	'use strict';
 
-if ($('.header_slider').length) {
-		$('.header_slider').slick({
-	   	arrows: false,
-	   	dots: true
-	   });
-	}
 
 	/* other */
 	$('.nav_btn').click(function(){
 		$('.nav_btn').toggleClass('nav-active');
 		$('.site_nav').toggleClass('side-active');
+		$('body').toggleClass('over_hidden');
 	});
 
 	//project block slider
@@ -47,10 +42,12 @@ if ($('.header_slider').length) {
 	$('.popup-btn').on('click', function(event) {
 		event.preventDefault();
 		$('.popup').fadeIn(400);
+		$('body').addClass('over_hidden');
 	});
 	$('.popup-close').on('click', function(event) {
 		event.preventDefault();
 		$('.popup').fadeOut(400);
+		$('body').removeClass('over_hidden');
 	});
 
 });
