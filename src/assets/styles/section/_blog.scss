@@ -313,21 +313,20 @@
 				}
 			}
 			
-			.blog_pag {
+			.pagination {
 				width: 100%;
-				.pagination {
+				.nav-links {
 					width: 100%;
 					display: flex;
-					justify-content: space-between;
-					li {
-						a {
-							padding: 0;
-							color: #0023ff;
+					justify-content: center;
+					a {
+						padding: 0;
+						display: inline-block;
+						color: #0023ff;
+						transition: all 200ms ease-in-out;
+						&:hover {
+							color: #000;
 							transition: all 200ms ease-in-out;
-							&:hover {
-								color: #000;
-								transition: all 200ms ease-in-out;
-							}
 						}
 					}
 				}

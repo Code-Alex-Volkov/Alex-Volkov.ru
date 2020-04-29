@@ -8,8 +8,8 @@ $(document).ready(function(){
 	/* other */
 	$('.nav_btn').click(function(){
 		$('.nav_btn').toggleClass('nav-active');
-		$('.site_nav').toggleClass('side-active');
-		$('body').toggleClass('over_hidden');
+		$('.site_nav_box').toggleClass('side-active');
+		$('body').toggleClass('over_hidden');	
 	});
 
 	//project block slider

@@ -14,7 +14,7 @@
 		margin-top: 20px;
 		margin-bottom: 80px;
 	}
-	.vk, .ins, .tlg, .github {
+	.social {
 		margin-bottom: 40px;
 		a {
 			font-size: 28px;
@@ -134,7 +134,7 @@
 				transition: all 0.5s;
 			}
 		}
-		.site_nav {
+		.site_nav_box {
 			position: fixed;
 			top: 0;
 			bottom: 0;
@@ -148,53 +148,53 @@
 			&.side-active {
 			    right: 0;
 			}
-			ul {
-				text-align: right;
-				margin-top: 70px;
-				margin-right: 70px;
-				li {
-					margin-bottom: 10px;
-					&.mobile_soc {
-						display: none;
-					}
-					a {
-					    position: relative;
-					    line-height: 30px;
-					    text-transform: uppercase;
-					    transition: 0.3s ease;
-					    color: #0023ff;
-					    text-decoration: none;
-					    @include LatoRegular_font();
-					    transition: all 0.3s;
-					    &:hover {
-					    	opacity: 0.7;
-					    	border-bottom: 1px solid #0023ff;
-					    	transition: all 0.3s;
-					    }
-					    .fa-address-card, .fa-question-circle, .fa-project-diagram, .fa-user-clock, .fa-wpforms, .fa-blog, .fa-id-card-alt, .fa-dollar-sign {
-					    	font-size: 40px;
-					    	padding-left: 20px;
-					    	width: 50px;
-					    	text-align: center;
-					    }
-					}
-					ul {
-						display: flex;
-						margin-right: 0;
-						margin-top: 30px;
-						justify-content: flex-end;
-						li {
-							display: inline-block;
-							&:not(:last-child) {
-							   margin-right: 25px;
-							}
-							a {
-								font-size: 28px;
-								color: #0023ff;
-								opacity: 0.7;
-							}
+			.site_nav {
+				ul {
+					text-align: right;
+					margin-top: 70px;
+					margin-right: 70px;
+					li {
+						margin-bottom: 10px;
+						a {
+						    position: relative;
+						    line-height: 30px;
+						    text-transform: uppercase;
+						    transition: 0.3s ease;
+						    color: #0023ff;
+						    text-decoration: none;
+						    @include LatoRegular_font();
+						    transition: all 0.3s;
+						    &:hover {
+						    	opacity: 0.7;
+						    	border-bottom: 1px solid #0023ff;
+						    	transition: all 0.3s;
+						    }
+						    .fa-address-card, .fa-question-circle, .fa-project-diagram, .fa-user-clock, .fa-wpforms, .fa-blog, .fa-id-card-alt, .fa-dollar-sign {
+						    	font-size: 40px;
+						    	padding-left: 20px;
+						    	width: 50px;
+						    	text-align: center;
+						    }
 						}
+						
 					}
+				}
+			}
+			
+		}
+		.mobile_soc {
+			display: none;
+			margin-top: 50px;
+			justify-content: center;
+			li {
+				display: inline-block;
+				&:not(:last-child) {
+				   margin-right: 25px;
+				}
+				a {
+					font-size: 28px;
+					color: #0023ff;
+					opacity: 0.7;
 				}
 			}
 		}
@@ -250,8 +250,8 @@
 	.left_box {
 		display: none;
 	}
-	.right_box .menu .site_nav ul li.mobile_soc {
-		display: block;
+	.right_box .menu .site_nav_box .mobile_soc {
+		display: flex;
 	}
 	.centr_box {
 		padding-left: 0;
