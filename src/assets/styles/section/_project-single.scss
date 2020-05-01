@@ -61,60 +61,64 @@
 			}
 			.right_single {
 				width: 73%;
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: space-between;
-				.block_project_single {
-					width: 48%;
-					height: 220px;
-					background: #fff;
-					box-shadow: 1px 1px 3px #c1c1c1;
-					margin-bottom: 30px;
-					&:hover {
-						box-shadow: 0 0 3px #000;
+				
+				.right_single_box {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					.block_project_single {
+						width: 48%;
+						height: 220px;
+						background: #fff;
+						box-shadow: 1px 1px 3px #c1c1c1;
+						margin-bottom: 30px;
+						&:hover {
+							box-shadow: 0 0 3px #000;
+							a {
+								.overlay {
+									opacity: 1;
+								}
+							}
+						}
+
 						a {
-							.overlay {
-								opacity: 1;
+							display: flex;
+							text-decoration: none;
+							position: relative;
+														
+							.block_img {
+								max-width: 200px;
+								
+								height: 220px;
+								overflow: hidden;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								img {
+									width: 100%;
+								}
 							}
-						}
-					}
+							.block_title_site {
+								display: flex;
+								flex-direction: column;
+								justify-content: center;
 
-					a {
-						display: flex;
-						text-decoration: none;
-						position: relative;
-													
-						.block_img {
-							max-width: 200px;
+								.name_site {
+									font-size: 24px;
+									padding-bottom: 20px;
+									color: #0023ff;
+
+								}
+								.data_download {
+									font-size: 16px;
+									color: #000;
+								}
+							}
 							
-							height: 220px;
-							overflow: hidden;
-							display: flex;
-							justify-content: center;
-							align-items: center;
-							img {
-								width: 100%;
-							}
 						}
-						.block_title_site {
-							display: flex;
-							flex-direction: column;
-							justify-content: center;
-
-							.name_site {
-								font-size: 24px;
-								padding-bottom: 20px;
-								color: #0023ff;
-
-							}
-							.data_download {
-								font-size: 16px;
-								color: #000;
-							}
-						}
-						
 					}
 				}
+				
 			}
 		}
 		
